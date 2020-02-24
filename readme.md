@@ -70,7 +70,7 @@ php artisan job:dispatch MoviesJob
             "created_at": "2020-02-24 03:54:52",
             "updated_at": "2020-02-24 06:42:52"
         },
-          ```
+        
 * GET index recently (Recent Movies) 
   'http://127.0.0.1:8000/api/recently'
   
