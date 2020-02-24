@@ -48,7 +48,7 @@ class MoviesController extends Controller
     function recently(){
         $movies = Movies::orderBy('release_date','DESC')->get();
         return  response()->json([
-            'message' => 'all movies viewed by rate',
+            'message' => 'all recent movies viewed',
             'movies' => $movies
         ],
             200);
