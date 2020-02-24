@@ -19,7 +19,7 @@ Setup new Database named "task"
 ## Migration
 
 ```bash
-php artisan maigration:fresh 
+php artisan migrate:fresh 
 ```
 
 ## Run First Queue and Job
@@ -27,6 +27,13 @@ php artisan maigration:fresh
 ```bash
 php artisan queue:work
 php artisan job:dispatch MoviesJob
+```
+## Schedule
+```php
+ protected function schedule(Schedule $schedule)
+    {
+        $schedule->job(new MoviesJob())->everyFiveMinutes();
+    }
 ```
 
 ## APIs
