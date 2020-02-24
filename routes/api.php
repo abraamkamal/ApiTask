@@ -23,5 +23,6 @@ Route::get('/get', function () {
 
 });
 Route::get('/index', 'MoviesController@index');
+Route::get('/index/{id}', 'MoviesController@show');
 Route::get('/rated', 'MoviesController@rated');
 Route::get('/recently', 'MoviesController@recently');
