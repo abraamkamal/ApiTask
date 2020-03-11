@@ -13,7 +13,7 @@
 
 All the code required to get started
 ## Clone
-Clone this repo to your local machine using https://github.com/abraamkamal/TruflaTask.git
+Clone this repo to your local machine using https://github.com/abraamkamal/ApiTask.git
 ## Database
 Setup new Database named "task"
 ## Migration
